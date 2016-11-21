@@ -29,11 +29,11 @@ RUN java -jar forge-1.7.10-10.13.4.1558-1.7.10-installer.jar --installServer
 
 RUN rm forge-1.7.10-10.13.4.1558-1.7.10-installer.jar
 
-ADD server.properties ops.json eula.txt startup.py __init__.py ./
+COPY server.properties ops.json eula.txt startup.py __init__.py ./
 
 RUN mkdir mods
 
-ADD Decorations-1.0.20.jar mods/
+COPY Decorations-1.0.20.jar mods/
 
 USER root
 
