@@ -45,6 +45,10 @@ RUN chown minecraft:minecraft /start/* -R
 
 RUN chmod a+x /start/start.sh
 
+RUN chmod a+r /start -R
+
+WORKDIR /home/minecraft
+
 VOLUME ["/home/minecraft"]
 
 # CMD ["/usr/bin/python", "/home/minecraft/startup.py"]
