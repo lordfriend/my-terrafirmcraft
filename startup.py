@@ -6,7 +6,23 @@ class DaemonThread:
 
     def __init__(self):
         self.p = None
-        self.args = ['java', '-Xmn1G', '-Xms4G', '-Xmx4G', '-jar', 'forge-1.7.10-10.13.4.1558-1.7.10-universal.jar', 'nogui', '-o', 'false']
+        self.args = [
+            'java',
+            '-Xms4G',
+            '-Xmx8G',
+            '-XX:NewSize=2G',
+            '-XX:MaxNewSize=4G',
+            '-XX:SurvivorRatio=2',
+            '-XX:+DisableExplicitGC',
+            '-d64',
+            '-XX:+UseConcMarkSweepGC',
+            '-XX:+AggressiveOpts',
+            '-jar',
+            'forge-1.7.10-10.13.4.1558-1.7.10-universal.jar',
+            'nogui',
+            '-o',
+            'false'
+        ]
 
     def preexec_func(self):
         '''
