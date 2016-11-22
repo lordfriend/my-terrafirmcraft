@@ -43,7 +43,7 @@ RUN chown minecraft:minecraft /home/minecraft
 
 RUN chown minecraft:minecraft /start/* -R
 
-RUN chmod a+x start.sh
+RUN chmod a+x /start/start.sh
 
 VOLUME ["/home/minecraft"]
 
