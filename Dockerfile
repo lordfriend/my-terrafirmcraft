@@ -19,7 +19,7 @@ RUN java -jar forge-1.7.10-10.13.4.1558-1.7.10-installer.jar --installServer
 RUN rm forge-1.7.10-10.13.4.1558-1.7.10-installer.jar \
     && rm forge-1.7.10-10.13.4.1558-1.7.10-installer.jar.log
 
-COPY server.properties eula.txt startup.py start.sh __init__.py ./
+COPY server.properties eula.txt startup.py __init__.py ./
 
 RUN mkdir mods
 
@@ -42,8 +42,6 @@ RUN useradd minecraft -p tfc -d /home/minecraft
 RUN chown minecraft:minecraft /home/minecraft
 
 RUN chown minecraft:minecraft /start/* -R
-
-RUN chmod a+x /start/start.sh
 
 RUN chmod a+r /start -R
 
