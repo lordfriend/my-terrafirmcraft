@@ -4,3 +4,4 @@ world
 startup.sh
 .idea
 .vscode
+docker-compose.yml

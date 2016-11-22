@@ -32,6 +32,7 @@ class DaemonThread:
     def stop_daemon(self):
         self.p.stdin.write('stop\r\n')
         self.p.stdin.flush()
+        self.p.wait()
 
 
 daemon = DaemonThread()
