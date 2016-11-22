@@ -49,6 +49,8 @@ RUN chmod a+r /start -R
 
 WORKDIR /home/minecraft
 
+USER minecraft
+
 VOLUME ["/home/minecraft"]
 
 # CMD ["/usr/bin/python", "/home/minecraft/startup.py"]
