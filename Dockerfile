@@ -33,6 +33,8 @@ RUN wget http://files.forgeessentials.com/forgeessentials-1.7.10-server.jar
 
 RUN wget http://files.player.to/fastcraft-1.23.jar
 
+RUN wget https://dl.dropboxusercontent.com/u/87519140/TFC/tfc_0.79.28/%5B1.7.10%5DTFCUdaryMod-0.2.31.jar
+
 EXPOSE 25565/udp
 
 RUN mkdir /home/minecraft
