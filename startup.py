@@ -1,8 +1,9 @@
 import subprocess
 import signal
-import threading
+from twisted.application.service import Service, Application
+from twisted.internet import threads
 
-class DaemonThread:
+class DaemonService(Service):
 
     def __init__(self):
         self.p = None
@@ -30,38 +31,34 @@ class DaemonThread:
         '''
         signal.signal(signal.SIGINT, signal.SIG_IGN)
 
-    def _run(self):
-        self.p = subprocess.Popen(self.args, stdin=subprocess.PIPE, stderr=subprocess.STDOUT, preexec_fn=self.preexec_func)
-        while True:
-            # print(self.p.stdout.readline())
-            # self.p.stdout.flush()
-            self.p.poll()
-            if self.p.returncode is not None:
-                print 'thread ended'
-                print self.p.returncode
-                break
-
     def start_daemon(self):
-        thread = threading.Thread(target=self._run)
-        thread.start()
+        self.p = subprocess.Popen(self.args, stdin=subprocess.PIPE, stderr=subprocess.STDOUT, preexec_fn=self.preexec_func)
 
     def stop_daemon(self):
         self.p.stdin.write('stop\r\n')
         self.p.stdin.flush()
         self.p.wait()
 
+    def startService(self):
+        self.start_daemon()
 
-daemon = DaemonThread()
+    def stopService(self):
+        return threads.deferToThread(self.stop_daemon)
 
 
-def stop_handler(signum, frame):
-    daemon.stop_daemon()
+application = Application('mc server daemon')
 
-signal.signal(signal.SIGTERM, stop_handler)
-signal.signal(signal.SIGINT, stop_handler)
+daemon = DaemonService()
 
-daemon.start_daemon()
+daemon.setServiceParent(application)
 
-signal.pause()
 
-print 'program ended'
+# def stop_handler(signum, frame):
+#     daemon.stop_daemon()
+#
+# signal.signal(signal.SIGTERM, stop_handler)
+# signal.signal(signal.SIGINT, stop_handler)
+#
+# daemon.start_daemon()
+
+# signal.pause()
