@@ -6,9 +6,8 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get install -y \
   sudo \
   vim \
   wget \
+  python-twisted
   && apt-get clean
-
-RUN pip install twisted
 
 RUN mkdir /start
 
