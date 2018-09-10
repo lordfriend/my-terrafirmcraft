@@ -13,28 +13,46 @@ RUN mkdir /start
 
 WORKDIR /start
 
-RUN wget http://files.minecraftforge.net/maven/net/minecraftforge/forge/1.7.10-10.13.4.1558-1.7.10/forge-1.7.10-10.13.4.1558-1.7.10-installer.jar
+RUN wget http://files.minecraftforge.net/maven/net/minecraftforge/forge/1.12.2-14.23.4.2760/forge-1.12.2-14.23.4.2760-installer.jar
 
-RUN java -jar forge-1.7.10-10.13.4.1558-1.7.10-installer.jar --installServer
+RUN java -jar forge-1.12.2-14.23.4.2760-installer.jar --installServer
 
-RUN rm forge-1.7.10-10.13.4.1558-1.7.10-installer.jar \
-    && rm forge-1.7.10-10.13.4.1558-1.7.10-installer.jar.log
+RUN rm forge-1.12.2-14.23.4.2760-installer.jar \
+    && rm forge-1.12.2-14.23.4.2760-installer.jar.log
 
 COPY server.properties eula.txt startup.py __init__.py ./
 
 RUN mkdir mods
 
-COPY Decorations-1.0.20.jar journeymap-1.7.10-5.1.4p1-unlimited.jar mods/
+COPY journeymap-1.12.2-5.5.2.jar mods/
 
 WORKDIR /start/mods
 
-RUN wget https://bitly.com/Build79-29 && mv Build79-29 [1.7.10]TerraFirmaCraft-0.79.29.922.jar
+RUN wget https://media.forgecdn.net/files/2518/488/techguns-1.12.2-2.0.1.1.jar
 
-RUN wget http://files.forgeessentials.com/forgeessentials-1.7.10-server.jar
+RUN wget https://media.forgecdn.net/files/2609/507/ImmersiveEngineering-0.12-85.jar
 
-RUN wget http://files.player.to/fastcraft-1.23.jar
+RUN wget https://media.forgecdn.net/files/2612/810/Chisel-MC1.12.2-0.2.1.34.jar
 
-RUN wget https://dl.dropboxusercontent.com/u/87519140/TFC/tfc_0.79.28/%5B1.7.10%5DTFCUdaryMod-0.2.31.jar
+RUN wget https://media.forgecdn.net/files/2586/247/CoFHCore-1.12.2-4.5.3.20-universal.jar
+
+RUN wget https://media.forgecdn.net/files/2584/26/CTM-MC1.12.2-0.3.2.18.jar
+
+RUN wget https://media.forgecdn.net/files/2567/260/RedstoneFlux-1.12-2.0.2.3-universal.jar
+
+RUN wget https://media.forgecdn.net/files/2563/327/Minecraft+Transport+Simulator-1.12.2-10.1.2.jar
+
+RUN wget https://media.forgecdn.net/files/2551/964/MTS_Offical_Pack_V04.jar
+
+RUN wget https://media.forgecdn.net/files/2544/919/immersivepetroleum-1.12.2-1.1.9.jar
+
+RUN wget https://media.forgecdn.net/files/2614/679/FTBUtilities-5.3.0.49.jar
+
+RUN wget https://media.forgecdn.net/files/2614/919/FTBLib-5.3.0.50.jar
+
+RUN wget https://media.forgecdn.net/files/2460/570/worldedit-forge-mc1.12-6.1.8-dist.jar
+
+# RUN wget http://files.forgeessentials.com/forgeessentials-1.7.10-server.jar
 
 EXPOSE 25565/udp
 
