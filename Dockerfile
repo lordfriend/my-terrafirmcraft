@@ -52,6 +52,12 @@ RUN wget https://media.forgecdn.net/files/2614/919/FTBLib-5.3.0.50.jar
 
 RUN wget https://media.forgecdn.net/files/2460/570/worldedit-forge-mc1.12-6.1.8-dist.jar
 
+RUN wget https://media.forgecdn.net/files/2516/761/RecurrentComplex-1.4.7.jar
+
+RUN wget https://media.forgecdn.net/files/2443/253/IvToolkit-1.3.3-1.12.jar
+
+RUN wget https://media.forgecdn.net/files/2484/281/%5b1.12%5dMoVillages-1.5.4.jar
+
 # RUN wget http://files.forgeessentials.com/forgeessentials-1.7.10-server.jar
 
 EXPOSE 25565/udp
