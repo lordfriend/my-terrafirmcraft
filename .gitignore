@@ -6,8 +6,8 @@ startup.sh
 .vscode
 docker-compose.yml
 venv
-config/forge.cfg
-config/forgeChunkLoading.cfg
+#config/forge.cfg
+#config/forgeChunkLoading.cfg
 mods
 logs
 #libraries

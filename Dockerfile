@@ -87,8 +87,8 @@ COPY server.properties\
      startup.py\
      __init__.py\
      libraries\
-     forge-1.12.2-14.23.4.2760-universal.jar
-     minecraft_server.1.12.2.jar
+     forge-1.12.2-14.23.4.2760-universal.jar\
+     minecraft_server.1.12.2.jar\
      config ./
 
 EXPOSE 25565/udp
