@@ -22,7 +22,8 @@ class DaemonService(Service):
             'forge-1.12.2-14.23.4.2760-universal.jar',
             'nogui',
             '-o',
-            'false'
+            'false',
+            '-Dfml.queryResult=confirm'
         ]
 
     def preexec_func(self):
