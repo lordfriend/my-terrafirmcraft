@@ -22,7 +22,7 @@ RUN java -jar forge-1.12.2-14.23.4.2760-installer.jar --installServer
 RUN rm forge-1.12.2-14.23.4.2760-installer.jar \
     && rm forge-1.12.2-14.23.4.2760-installer.jar.log
 
-COPY server.properties eula.txt startup.py __init__.py ./
+COPY server.properties eula.txt startup.py __init__.py config ./
 
 RUN mkdir mods
 
@@ -84,6 +84,8 @@ RUN wget https://media.forgecdn.net/files/2618/630/CodeChickenLib-1.12.2-3.2.2.3
 
 
 EXPOSE 25565/udp
+EXPOSE 25565/tcp
+EXPOSE 25568/tcp
 
 RUN mkdir /home/minecraft
 # change password after build
