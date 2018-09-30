@@ -78,6 +78,7 @@ RUN wget https://media.forgecdn.net/files/2590/442/OnlinePicFrame_v1.4.19_mc1.12
 
 RUN wget https://media.forgecdn.net/files/2594/241/ChickenChunks-1.12.2-2.4.1.73-universal.jar
 
+RUN wget https://media.forgecdn.net/files/2618/630/CodeChickenLib-1.12.2-3.2.2.353-universal.jar
 
 
 EXPOSE 25565/udp
