@@ -15,14 +15,12 @@ RUN mkdir /start
 
 WORKDIR /start
 
-RUN wget http://files.minecraftforge.net/maven/net/minecraftforge/forge/1.12.2-14.23.4.2760/forge-1.12.2-14.23.4.2760-installer.jar
+# RUN wget http://files.minecraftforge.net/maven/net/minecraftforge/forge/1.12.2-14.23.4.2760/forge-1.12.2-14.23.4.2760-installer.jar
 
-RUN java -jar forge-1.12.2-14.23.4.2760-installer.jar --installServer
+#RUN java -jar forge-1.12.2-14.23.4.2760-installer.jar --installServer
 
-RUN rm forge-1.12.2-14.23.4.2760-installer.jar \
-    && rm forge-1.12.2-14.23.4.2760-installer.jar.log
-
-COPY server.properties eula.txt startup.py __init__.py config ./
+#RUN rm forge-1.12.2-14.23.4.2760-installer.jar \
+#    && rm forge-1.12.2-14.23.4.2760-installer.jar.log
 
 RUN mkdir mods
 
@@ -82,6 +80,16 @@ RUN wget https://media.forgecdn.net/files/2594/241/ChickenChunks-1.12.2-2.4.1.73
 
 RUN wget https://media.forgecdn.net/files/2618/630/CodeChickenLib-1.12.2-3.2.2.353-universal.jar
 
+WORKDIR /start
+
+COPY server.properties\
+     eula.txt\
+     startup.py\
+     __init__.py\
+     libraries\
+     forge-1.12.2-14.23.4.2760-universal.jar
+     minecraft_server.1.12.2.jar
+     config ./
 
 EXPOSE 25565/udp
 EXPOSE 25565/tcp

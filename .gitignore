@@ -10,12 +10,13 @@ config/forge.cfg
 config/forgeChunkLoading.cfg
 mods
 logs
-libraries
+#libraries
 world
 banned-ips.json
 banned-players.json
-forge-*
-minecraft_server.1.12.2.jar
+forge-*-installer.jar
+forge-*-installer.jar.log
+#minecraft_server.1.12.2.jar
 ops.json
 twistd.log
 twistd.pid
