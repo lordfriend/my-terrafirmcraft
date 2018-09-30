@@ -40,9 +40,9 @@ RUN wget https://media.forgecdn.net/files/2584/26/CTM-MC1.12.2-0.3.2.18.jar
 
 RUN wget https://media.forgecdn.net/files/2567/260/RedstoneFlux-1.12-2.0.2.3-universal.jar
 
-RUN wget https://media.forgecdn.net/files/2563/327/Minecraft+Transport+Simulator-1.12.2-10.1.2.jar
+RUN wget https://media.forgecdn.net/files/2621/95/Minecraft+Transport+Simulator-1.12.2-11.2.0.jar
 
-RUN wget https://media.forgecdn.net/files/2551/964/MTS_Offical_Pack_V04.jar
+RUN wget https://media.forgecdn.net/files/2617/230/MTS_Official_Pack_V06.jar
 
 RUN wget https://media.forgecdn.net/files/2544/919/immersivepetroleum-1.12.2-1.1.9.jar
 
@@ -58,7 +58,27 @@ RUN wget https://media.forgecdn.net/files/2443/253/IvToolkit-1.3.3-1.12.jar
 
 RUN wget https://media.forgecdn.net/files/2484/281/%5b1.12%5dMoVillages-1.5.4.jar
 
-# RUN wget http://files.forgeessentials.com/forgeessentials-1.7.10-server.jar
+RUN wget https://media.forgecdn.net/files/2619/944/BlackThorne+Civilian+Pack+%5bMTS%5d+1.10.2-11.0.0-1.1.3.jar
+
+RUN wget https://media.forgecdn.net/files/2613/181/CreativeCore_v1.9.32_mc1.12.2.jar
+
+RUN wget https://media.forgecdn.net/files/2621/13/PTRLib-1.0.3.jar
+
+RUN wget https://media.forgecdn.net/files/2621/15/Decocraft-2.6.2_1.12.2.jar
+
+RUN wget https://media.forgecdn.net/files/2573/710/leverbuttonlights-1.12.2-3.2.9.jar
+
+RUN wget https://media.forgecdn.net/files/2585/469/LightingWand-1.0.4.jar
+
+RUN wget https://media.forgecdn.net/files/2619/943/UNU+Parts+Pack+%5bMTS%5d+1.10.2-11.0.0-1.1.3.jar
+
+RUN wget https://media.forgecdn.net/files/2620/86/MTS_Heavy_Industrial_by_AdamRK_1.8.0.jar
+
+RUN wget https://media.forgecdn.net/files/2590/442/OnlinePicFrame_v1.4.19_mc1.12.2.jar
+
+RUN wget https://media.forgecdn.net/files/2594/241/ChickenChunks-1.12.2-2.4.1.73-universal.jar
+
+
 
 EXPOSE 25565/udp
 
