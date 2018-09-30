@@ -5,3 +5,4 @@ startup.sh
 .idea
 .vscode
 docker-compose.yml
+venv

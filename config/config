@@ -1,0 +1,3 @@
+[rpc]
+server_port = 25568
+password = 12345

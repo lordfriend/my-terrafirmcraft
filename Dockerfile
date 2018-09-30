@@ -6,8 +6,10 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get install -y \
   sudo \
   vim \
   wget \
-  python-twisted \
+  python3-pip \
   && apt-get clean
+
+RUN sudo pip install Twisted
 
 RUN mkdir /start
 
@@ -99,4 +101,4 @@ USER minecraft
 
 VOLUME ["/home/minecraft"]
 
-# CMD ["/usr/bin/python", "/home/minecraft/startup.py"]
+# CMD ["/usr/bin/python3", "/home/minecraft/startup.py"]
