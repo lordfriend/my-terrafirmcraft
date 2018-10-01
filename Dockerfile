@@ -80,6 +80,8 @@ RUN wget https://media.forgecdn.net/files/2594/241/ChickenChunks-1.12.2-2.4.1.73
 
 RUN wget https://media.forgecdn.net/files/2618/630/CodeChickenLib-1.12.2-3.2.2.353-universal.jar
 
+RUN wget https://media.forgecdn.net/files/2463/318/ModernLights-1.0.3_1.12.jar
+
 WORKDIR /start
 
 COPY server.properties\
