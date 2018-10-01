@@ -82,6 +82,8 @@ RUN wget https://media.forgecdn.net/files/2618/630/CodeChickenLib-1.12.2-3.2.2.3
 
 RUN wget https://media.forgecdn.net/files/2463/318/ModernLights-1.0.3_1.12.jar
 
+RUN wget https://media.forgecdn.net/files/2568/579/immersivetech-1.12-1.3.10.jar
+
 WORKDIR /start
 
 COPY server.properties\
