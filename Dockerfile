@@ -84,6 +84,14 @@ RUN wget https://media.forgecdn.net/files/2463/318/ModernLights-1.0.3_1.12.jar
 
 RUN wget https://media.forgecdn.net/files/2568/579/immersivetech-1.12-1.3.10.jar
 
+RUN wget https://media.forgecdn.net/files/2615/203/ImmersiveRailroading-1.3.3_1.12.jar
+
+RUN wget https://media.forgecdn.net/files/2551/739/IGW-Mod-1.12.2-1.4.4-15-universal.jar
+
+RUN wget https://media.forgecdn.net/files/2535/626/TrackAPI-1.1_1.12.jar
+
+RUN wget https://media.forgecdn.net/files/2540/146/OpenComputers-MC1.12.2-1.7.2.67.jar
+
 WORKDIR /start
 
 COPY server.properties\
