@@ -105,10 +105,14 @@ COPY server.properties\
      scripts/\
      forge-1.12.2-14.23.4.2760-universal.jar\
      minecraft_server.1.12.2.jar\
-     config/ ./
+     ./
+
+RUN mkdir /start/config
+
+COPY config/* /start/config
 
 # install immersiverailroading stock resource pack
-RUN mkdir -p /start/config/immersiverailroading
+RUN mkdir /start/config/immersiverailroading
 RUN mkdir /start/resourcepacks
 WORKDIR /start/config/immersiverailroading
 
