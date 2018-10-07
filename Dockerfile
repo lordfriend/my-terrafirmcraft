@@ -101,11 +101,11 @@ COPY server.properties\
      eula.txt\
      startup.py\
      __init__.py\
-     libraries\
-     scripts\
+     libraries/\
+     scripts/\
      forge-1.12.2-14.23.4.2760-universal.jar\
      minecraft_server.1.12.2.jar\
-     config ./
+     config/ ./
 
 # install immersiverailroading stock resource pack
 RUN mkdir -p /start/config/immersiverailroading
