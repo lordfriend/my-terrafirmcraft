@@ -94,6 +94,19 @@ RUN wget https://media.forgecdn.net/files/2540/146/OpenComputers-MC1.12.2-1.7.2.
 
 RUN wget https://media.forgecdn.net/files/2623/931/CraftTweaker2-1.12-4.1.10.jar
 
+# copy repo files to root folder
+WORKDIR /start
+
+COPY server.properties\
+     eula.txt\
+     startup.py\
+     __init__.py\
+     libraries\
+     scripts\
+     forge-1.12.2-14.23.4.2760-universal.jar\
+     minecraft_server.1.12.2.jar\
+     config ./
+
 # install immersiverailroading stock resource pack
 RUN mkdir /start/config/immersiverailroading
 RUN mkdir /start/resourcepacks
@@ -110,18 +123,7 @@ COPY heavy_industrial.zip\
     Japanese_Electric_Locomotive.zip\
     /start/resourcepacks/
 
-WORKDIR /start
-
-COPY server.properties\
-     eula.txt\
-     startup.py\
-     __init__.py\
-     libraries\
-     scripts\
-     forge-1.12.2-14.23.4.2760-universal.jar\
-     minecraft_server.1.12.2.jar\
-     config ./
-
+# expose port
 EXPOSE 25565/udp
 EXPOSE 25565/tcp
 EXPOSE 25568/tcp
