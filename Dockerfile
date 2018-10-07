@@ -122,7 +122,7 @@ RUN wget -O Amtrak.zip https://media.forgecdn.net/files/2603/398/Amtrak%2B.zip
 
 RUN wget -O Japanese_Electric_Locomotive.zip https://media.forgecdn.net/files/2610/625/Japanese+Electric+Locomotive+Pack.zip
 
-RUN copy heavy_industrial.zip\
+RUN cp heavy_industrial.zip\
     Amtrak.zip\
     Japanese_Electric_Locomotive.zip\
     /start/resourcepacks/
