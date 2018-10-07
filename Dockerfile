@@ -102,14 +102,15 @@ COPY server.properties\
      startup.py\
      __init__.py\
      libraries/\
-     scripts/\
      forge-1.12.2-14.23.4.2760-universal.jar\
      minecraft_server.1.12.2.jar\
      ./
 
 RUN mkdir /start/config
+RUN mkdir /start/scripts
 
 COPY config/* /start/config/
+COPY scripts/ /start/scripts/
 
 # install immersiverailroading stock resource pack
 RUN mkdir /start/config/immersiverailroading
