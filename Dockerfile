@@ -92,6 +92,23 @@ RUN wget https://media.forgecdn.net/files/2535/626/TrackAPI-1.1_1.12.jar
 
 RUN wget https://media.forgecdn.net/files/2540/146/OpenComputers-MC1.12.2-1.7.2.67.jar
 
+RUN wget https://media.forgecdn.net/files/2623/931/CraftTweaker2-1.12-4.1.10.jar
+
+# install immersiverailroading stock resource pack
+RUN mkdir immersiverailroading
+
+WORKDIR /start/mods/immersiverailroading
+
+RUN wget https://media.forgecdn.net/files/2580/642/Heavy%2BIndustrial%2B1.4.2.1%2Bby%2Badam%2Br%2Bk.zip
+
+RUN wget https://media.forgecdn.net/files/2603/398/Amtrak%2B.zip
+
+RUN mkdir /start/resourcepacks
+
+COPY "Heavy+Industrial\+1.4.2.1+by+adam+r+k.zip"\
+    "Amtrak+.zip"\
+    /start/resourcepacks/
+
 WORKDIR /start
 
 COPY server.properties\
@@ -99,6 +116,7 @@ COPY server.properties\
      startup.py\
      __init__.py\
      libraries\
+     scripts\
      forge-1.12.2-14.23.4.2760-universal.jar\
      minecraft_server.1.12.2.jar\
      config ./
