@@ -105,7 +105,7 @@ RUN wget https://media.forgecdn.net/files/2603/398/Amtrak%2B.zip
 
 RUN mkdir /start/resourcepacks
 
-COPY "Heavy+Industrial\+1.4.2.1+by+adam+r+k.zip"\
+COPY "Heavy+Industrial+1.4.2.1+by+adam+r+k.zip"\
     "Amtrak+.zip"\
     /start/resourcepacks/
 
