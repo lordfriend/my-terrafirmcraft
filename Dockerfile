@@ -99,14 +99,17 @@ RUN mkdir immersiverailroading
 
 WORKDIR /start/mods/immersiverailroading
 
-RUN wget https://media.forgecdn.net/files/2580/642/Heavy%2BIndustrial%2B1.4.2.1%2Bby%2Badam%2Br%2Bk.zip
+RUN wget -O heavy_industrial.zip https://media.forgecdn.net/files/2580/642/Heavy%2BIndustrial%2B1.4.2.1%2Bby%2Badam%2Br%2Bk.zip
 
-RUN wget https://media.forgecdn.net/files/2603/398/Amtrak%2B.zip
+RUN wget -O Amtrak.zip https://media.forgecdn.net/files/2603/398/Amtrak%2B.zip
+
+RUN wget -O Japanese_Electric_Locomotive.zip https://media.forgecdn.net/files/2610/625/Japanese+Electric+Locomotive+Pack.zip
 
 RUN mkdir /start/resourcepacks
 
-COPY "Heavy+Industrial+1.4.2.1+by+adam+r+k.zip"\
-    "Amtrak+.zip"\
+COPY heavy_industrial.zip\
+    Amtrak.zip\
+    Japanese_Electric_Locomotive.zip\
     /start/resourcepacks/
 
 WORKDIR /start
