@@ -109,7 +109,7 @@ COPY server.properties\
 
 RUN mkdir /start/config
 
-COPY config/* /start/config
+COPY config/* /start/config/
 
 # install immersiverailroading stock resource pack
 RUN mkdir /start/config/immersiverailroading
