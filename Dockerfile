@@ -27,7 +27,7 @@ COPY server.properties\
      eula.txt\
      startup.py\
      __init__.py\
-     forge-1.12.2-14.23.4.2760-universal.jar\
+     forge-1.12.2-14.23.5.2768-universal.jar\
      minecraft_server.1.12.2.jar\
      ./
 
