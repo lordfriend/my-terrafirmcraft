@@ -13,8 +13,6 @@ RUN sudo pip3 install Twisted
 
 RUN mkdir /start
 
-WORKDIR /start
-
 # RUN wget http://files.minecraftforge.net/maven/net/minecraftforge/forge/1.12.2-14.23.4.2760/forge-1.12.2-14.23.4.2760-installer.jar
 
 #RUN java -jar forge-1.12.2-14.23.4.2760-installer.jar --installServer
@@ -22,9 +20,45 @@ WORKDIR /start
 #RUN rm forge-1.12.2-14.23.4.2760-installer.jar \
 #    && rm forge-1.12.2-14.23.4.2760-installer.jar.log
 
-RUN mkdir mods
+# copy repo files to root folder
+WORKDIR /start
 
-COPY journeymap-1.12.2-5.5.2.jar mods/
+COPY server.properties\
+     eula.txt\
+     startup.py\
+     __init__.py\
+     forge-1.12.2-14.23.4.2760-universal.jar\
+     minecraft_server.1.12.2.jar\
+     ./
+
+RUN mkdir /start/libraries
+RUN mkdir /start/config
+RUN mkdir /start/scripts
+
+COPY libraries/* /start/libraries/
+COPY config/* /start/config/
+COPY scripts/ /start/scripts/
+
+# install immersiverailroading stock resource pack
+RUN mkdir /start/config/immersiverailroading
+RUN mkdir /start/resourcepacks
+WORKDIR /start/config/immersiverailroading
+
+RUN wget -O heavy_industrial.zip https://media.forgecdn.net/files/2580/642/Heavy%2BIndustrial%2B1.4.2.1%2Bby%2Badam%2Br%2Bk.zip
+
+RUN wget -O Amtrak.zip https://media.forgecdn.net/files/2603/398/Amtrak%2B.zip
+
+RUN wget -O Japanese_Electric_Locomotive.zip https://media.forgecdn.net/files/2610/625/Japanese+Electric+Locomotive+Pack.zip
+
+RUN cp heavy_industrial.zip\
+    Amtrak.zip\
+    Japanese_Electric_Locomotive.zip\
+    /start/resourcepacks/
+
+
+RUN mkdir /start/mods
+
+COPY journeymap-1.12.2-5.5.2.jar /start/mods/
 
 WORKDIR /start/mods
 
@@ -94,39 +128,8 @@ RUN wget https://media.forgecdn.net/files/2540/146/OpenComputers-MC1.12.2-1.7.2.
 
 RUN wget https://media.forgecdn.net/files/2623/931/CraftTweaker2-1.12-4.1.10.jar
 
-# copy repo files to root folder
-WORKDIR /start
+RUN wget https://media.forgecdn.net/files/2488/533/Drones-0.3.0.jar
 
-COPY server.properties\
-     eula.txt\
-     startup.py\
-     __init__.py\
-     libraries/\
-     forge-1.12.2-14.23.4.2760-universal.jar\
-     minecraft_server.1.12.2.jar\
-     ./
-
-RUN mkdir /start/config
-RUN mkdir /start/scripts
-
-COPY config/* /start/config/
-COPY scripts/ /start/scripts/
-
-# install immersiverailroading stock resource pack
-RUN mkdir /start/config/immersiverailroading
-RUN mkdir /start/resourcepacks
-WORKDIR /start/config/immersiverailroading
-
-RUN wget -O heavy_industrial.zip https://media.forgecdn.net/files/2580/642/Heavy%2BIndustrial%2B1.4.2.1%2Bby%2Badam%2Br%2Bk.zip
-
-RUN wget -O Amtrak.zip https://media.forgecdn.net/files/2603/398/Amtrak%2B.zip
-
-RUN wget -O Japanese_Electric_Locomotive.zip https://media.forgecdn.net/files/2610/625/Japanese+Electric+Locomotive+Pack.zip
-
-RUN cp heavy_industrial.zip\
-    Amtrak.zip\
-    Japanese_Electric_Locomotive.zip\
-    /start/resourcepacks/
 
 # expose port
 EXPOSE 25565/udp
