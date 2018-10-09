@@ -64,7 +64,7 @@ WORKDIR /start/mods
 
 RUN wget https://media.forgecdn.net/files/2518/488/techguns-1.12.2-2.0.1.1.jar
 
-RUN wget https://media.forgecdn.net/files/2609/507/ImmersiveEngineering-0.12-85.jar
+#RUN wget https://media.forgecdn.net/files/2609/507/ImmersiveEngineering-0.12-85.jar
 
 RUN wget https://media.forgecdn.net/files/2612/810/Chisel-MC1.12.2-0.2.1.34.jar
 
@@ -130,6 +130,7 @@ RUN wget https://media.forgecdn.net/files/2623/931/CraftTweaker2-1.12-4.1.10.jar
 
 RUN wget https://media.forgecdn.net/files/2488/533/Drones-0.3.0.jar
 
+RUN wget https://media.forgecdn.net/files/2625/312/ImmersiveEngineering-0.12-86.jar
 
 # expose port
 EXPOSE 25565/udp
