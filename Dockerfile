@@ -58,7 +58,7 @@ RUN cp heavy_industrial.zip\
 
 RUN mkdir /start/mods
 
-COPY journeymap-1.12.2-5.5.2.jar /start/mods/
+# COPY journeymap-1.12.2-5.5.2.jar /start/mods/
 
 WORKDIR /start/mods
 
