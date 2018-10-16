@@ -27,3 +27,13 @@ recipes.addShaped("minecraft_packed_ice", <minecraft:packed_ice>, [
 
 // remove techguns antigravypack
 recipes.removeByRecipeName("techguns:antigravpack");
+
+// remove structure arm steel recipes which conflicts with steel stairs.
+recipes.removeByRecipeName("immersiveengineering:metal_decoration/structural_arm_steel");
+
+// add turret recipes which can use concrete from immersiveengineering
+recipes.addShaped("techguns_turret", <techguns:basicmachine:3>, [
+    [<ore:plateIron>, <ore:circuitBasic>, <ore:plateIron>],
+    [<immersiveengineering:stone_decoration:5>, <techguns:itemshared:70>, <immersiveengineering:stone_decoration:5>],
+    [<ore:plateIron>, <ore:dustRedstone>, <ore:plateIron>]
+]);
