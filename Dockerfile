@@ -34,6 +34,7 @@ COPY server.properties\
 RUN mkdir /start/libraries
 RUN mkdir /start/config
 RUN mkdir /start/scripts
+RUN mkdir /start/mods
 
 COPY libraries/* /start/libraries/
 COPY config/* /start/config/
@@ -42,23 +43,8 @@ COPY scripts/ /start/scripts/
 # install immersiverailroading stock resource pack
 RUN mkdir /start/config/immersiverailroading
 RUN mkdir /start/resourcepacks
-WORKDIR /start/config/immersiverailroading
 
-#RUN wget -O heavy_industrial.zip https://media.forgecdn.net/files/2580/642/Heavy%2BIndustrial%2B1.4.2.1%2Bby%2Badam%2Br%2Bk.zip
-RUN wget -O Amtrak.zip https://media.forgecdn.net/files/2603/398/Amtrak%2B.zip
-RUN wget -O American_Freight_Pack.zip https://media.forgecdn.net/files/2623/708/American+Freight+Pack.zip
-RUN wget -O American_Diesel_Locomotive_Pack.zip https://media.forgecdn.net/files/2624/209/American+Diesel+Locomotive+Pack.zip
-#RUN wget -O Japanese_Electric_Locomotive.zip https://media.forgecdn.net/files/2610/625/Japanese+Electric+Locomotive+Pack.zip
-
-RUN cp Amtrak.zip\
-    American_Freight_Pack.zip\
-    American_Diesel_Locomotive_Pack.zip\
-    /start/resourcepacks/
-
-
-RUN mkdir /start/mods
-
-# COPY journeymap-1.12.2-5.5.2.jar /start/mods/
+# locked mods not expecting to change
 
 WORKDIR /start/mods
 
@@ -135,6 +121,22 @@ RUN wget https://media.forgecdn.net/files/2625/312/ImmersiveEngineering-0.12-86.
 RUN wget https://media.forgecdn.net/files/2608/992/CustomNPCs_1.12.2\(26aug18\).jar
 
 RUN wget https://media.forgecdn.net/files/2505/781/NoSpawnZone-1.12.2.1.3.jar
+
+# download resources pack
+WORKDIR /start/config/immersiverailroading
+
+#RUN wget -O heavy_industrial.zip https://media.forgecdn.net/files/2580/642/Heavy%2BIndustrial%2B1.4.2.1%2Bby%2Badam%2Br%2Bk.zip
+RUN wget -O Amtrak.zip https://media.forgecdn.net/files/2603/398/Amtrak%2B.zip
+RUN wget -O American_Freight_Pack.zip https://media.forgecdn.net/files/2623/708/American+Freight+Pack.zip
+RUN wget -O American_Diesel_Locomotive_Pack.zip https://media.forgecdn.net/files/2624/209/American+Diesel+Locomotive+Pack.zip
+RUN wget https://media.forgecdn.net/files/2624/834/AmericanPassengerPack_beta0.3.zip
+#RUN wget -O Japanese_Electric_Locomotive.zip https://media.forgecdn.net/files/2610/625/Japanese+Electric+Locomotive+Pack.zip
+
+RUN cp Amtrak.zip\
+    American_Freight_Pack.zip\
+    American_Diesel_Locomotive_Pack.zip\
+    AmericanPassengerPack_beta0.3.zip\
+    /start/resourcepacks/
 
 # expose port
 EXPOSE 25565/udp
