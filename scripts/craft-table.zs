@@ -37,3 +37,15 @@ recipes.addShaped("techguns_turret", <techguns:basicmachine:3>, [
     [<immersiveengineering:stone_decoration:5>, <techguns:itemshared:70>, <immersiveengineering:stone_decoration:5>],
     [<ore:plateIron>, <ore:dustRedstone>, <ore:plateIron>]
 ]);
+
+// remove the emerald satchels
+recipes.removeByRecipeName("vanillasatchels:satchel_19");
+recipes.removeByRecipeName("vanillasatchels:satchel_18");
+recipes.removeByRecipeName("vanillasatchels:satchel_14");
+recipes.removeByRecipeName("vanillasatchels:satchel_13");
+recipes.removeByRecipeName("vanillasatchels:satchel_24");
+recipes.removeByRecipeName("vanillasatchels:satchel_23");
+recipes.removeByRecipeName("vanillasatchels:satchel_4");
+recipes.removeByRecipeName("vanillasatchels:satchel_3");
+recipes.removeByRecipeName("vanillasatchels:satchel_9");
+recipes.removeByRecipeName("vanillasatchels:satchel_8");

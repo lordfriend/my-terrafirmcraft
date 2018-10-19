@@ -118,9 +118,11 @@ RUN wget https://media.forgecdn.net/files/2488/533/Drones-0.3.0.jar
 
 RUN wget https://media.forgecdn.net/files/2625/312/ImmersiveEngineering-0.12-86.jar
 
-RUN wget https://media.forgecdn.net/files/2608/992/CustomNPCs_1.12.2\(26aug18\).jar
+#RUN wget https://media.forgecdn.net/files/2608/992/CustomNPCs_1.12.2\(26aug18\).jar
 
 RUN wget https://media.forgecdn.net/files/2505/781/NoSpawnZone-1.12.2.1.3.jar
+
+RUN wget https://media.forgecdn.net/files/2568/8/VanillaSatchels-1.12.2-1.0.0.1-universal.jar
 
 # download resources pack
 WORKDIR /start/config/immersiverailroading
