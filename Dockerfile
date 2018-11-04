@@ -48,10 +48,6 @@ RUN mkdir /start/resourcepacks
 
 WORKDIR /start/mods
 
-RUN wget https://media.forgecdn.net/files/2518/488/techguns-1.12.2-2.0.1.1.jar
-
-#RUN wget https://media.forgecdn.net/files/2609/507/ImmersiveEngineering-0.12-85.jar
-
 RUN wget https://media.forgecdn.net/files/2612/810/Chisel-MC1.12.2-0.2.1.34.jar
 
 RUN wget https://media.forgecdn.net/files/2586/247/CoFHCore-1.12.2-4.5.3.20-universal.jar
@@ -123,6 +119,8 @@ RUN wget https://media.forgecdn.net/files/2625/312/ImmersiveEngineering-0.12-86.
 RUN wget https://media.forgecdn.net/files/2505/781/NoSpawnZone-1.12.2.1.3.jar
 
 RUN wget https://media.forgecdn.net/files/2568/8/VanillaSatchels-1.12.2-1.0.0.1-universal.jar
+
+RUN wget https://github.com/lordfriend/Techguns2/releases/download/2.0.1.2_fix_deps_techguns/techguns-1.12.2-2.0.1.2.jar
 
 # download resources pack
 WORKDIR /start/config/immersiverailroading
