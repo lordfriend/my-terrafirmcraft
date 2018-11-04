@@ -62,9 +62,9 @@ RUN wget https://media.forgecdn.net/files/2617/230/MTS_Official_Pack_V06.jar
 
 RUN wget https://media.forgecdn.net/files/2544/919/immersivepetroleum-1.12.2-1.1.9.jar
 
-RUN wget https://media.forgecdn.net/files/2614/679/FTBUtilities-5.3.0.49.jar
+RUN wget https://media.forgecdn.net/files/2623/999/FTBUtilities-5.3.0.52.jar
 
-RUN wget https://media.forgecdn.net/files/2614/919/FTBLib-5.3.0.50.jar
+RUN wget https://media.forgecdn.net/files/2625/772/FTBLib-5.3.0.56.jar
 
 RUN wget https://media.forgecdn.net/files/2460/570/worldedit-forge-mc1.12-6.1.8-dist.jar
 
