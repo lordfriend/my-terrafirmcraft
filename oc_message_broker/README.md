@@ -1,0 +1,1 @@
+Use for in game opencomputer communication. This endpoint act as a message broker.

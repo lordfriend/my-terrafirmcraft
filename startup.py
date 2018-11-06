@@ -1,3 +1,5 @@
+# run this script using twistd
+# twistd -n -y ./startup --pidfile=
 import subprocess
 import signal
 from twisted.web import server, resource
@@ -9,6 +11,8 @@ try:
     from configparser import ConfigParser
 except:
     from ConfigParser import ConfigParser
+
+from oc_message_broker.endpoint import handle_request
 
 
 class DaemonService(Service):
@@ -97,9 +101,12 @@ class RPCInterface(resource.Resource):
         if rpc_method == 'command':
             self.daemon.p.stdin.write('{0}\r\n'.format(content).encode('utf-8'))
             self.daemon.p.stdin.flush()
+        elif rpc_method == 'message':
+            request.responseHeaders.addRawHeader(b"Content-Type", b"application/json")
+            return handle_request(content).encode("utf-8")
         else:
             print('no such a method ({0}) found'.format(rpc_method, ))
-        return ''
+        return "{\"message\": \"ok\"}".encode("utf-8")
 
 
 def setup_server(daemon_service):
