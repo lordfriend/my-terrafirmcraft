@@ -2,10 +2,16 @@
 # twistd -n -y ./startup --pidfile=
 import subprocess
 import signal
+import os
+import sys
 from twisted.web import server, resource
 from twisted.application.service import Service, Application
 from twisted.application import internet
 from twisted.internet import threads
+
+if os.path.abspath(os.curdir) not in sys.path:
+    print('...missing directory in PYTHONPATH... added!')
+    sys.path.append(os.path.abspath(os.curdir))
 
 try:
     from configparser import ConfigParser
