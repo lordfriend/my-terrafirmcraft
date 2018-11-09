@@ -23,6 +23,8 @@ RUN mkdir /start
 # copy repo files to root folder
 WORKDIR /start
 
+RUN mkdir /start/oc_message_broker
+
 COPY server.properties\
      eula.txt\
      startup.py\
@@ -30,6 +32,7 @@ COPY server.properties\
      forge-1.12.2-14.23.5.2768-universal.jar\
      minecraft_server.1.12.2.jar\
      ./
+COPY oc_message_broker/* /start/oc_message_broker/
 
 RUN mkdir /start/libraries
 RUN mkdir /start/config
