@@ -100,7 +100,7 @@ RUN wget https://media.forgecdn.net/files/2463/318/ModernLights-1.0.3_1.12.jar
 
 RUN wget https://media.forgecdn.net/files/2568/579/immersivetech-1.12-1.3.10.jar
 
-RUN wget https://media.forgecdn.net/files/2615/203/ImmersiveRailroading-1.3.3_1.12.jar
+RUN wget https://media.forgecdn.net/files/2635/637/ImmersiveRailroading-1.4.0_1.12.jar
 
 RUN wget https://media.forgecdn.net/files/2551/739/IGW-Mod-1.12.2-1.4.4-15-universal.jar
 
@@ -120,7 +120,7 @@ RUN wget https://media.forgecdn.net/files/2505/781/NoSpawnZone-1.12.2.1.3.jar
 
 RUN wget https://media.forgecdn.net/files/2568/8/VanillaSatchels-1.12.2-1.0.0.1-universal.jar
 
-RUN wget https://github.com/lordfriend/Techguns2/releases/download/2.0.1.2_fix_deps_techguns/techguns-1.12.2-2.0.1.2.jar
+RUN wget https://github.com/lordfriend/Techguns2/releases/download/2.0.1.3/techguns-1.12.2-2.0.1.3.jar
 
 # download resources pack
 WORKDIR /start/config/immersiverailroading
