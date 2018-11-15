@@ -77,7 +77,7 @@ RUN wget https://media.forgecdn.net/files/2443/253/IvToolkit-1.3.3-1.12.jar
 
 RUN wget https://media.forgecdn.net/files/2484/281/%5b1.12%5dMoVillages-1.5.4.jar
 
-RUN wget https://media.forgecdn.net/files/2619/944/BlackThorne+Civilian+Pack+%5bMTS%5d+1.10.2-11.0.0-1.1.3.jar
+#RUN wget https://media.forgecdn.net/files/2619/944/BlackThorne+Civilian+Pack+%5bMTS%5d+1.10.2-11.0.0-1.1.3.jar
 
 RUN wget https://media.forgecdn.net/files/2613/181/CreativeCore_v1.9.32_mc1.12.2.jar
 
@@ -89,7 +89,7 @@ RUN wget https://media.forgecdn.net/files/2573/710/leverbuttonlights-1.12.2-3.2.
 
 RUN wget https://media.forgecdn.net/files/2585/469/LightingWand-1.0.4.jar
 
-RUN wget https://media.forgecdn.net/files/2619/943/UNU+Parts+Pack+%5bMTS%5d+1.10.2-11.0.0-1.1.3.jar
+#RUN wget https://media.forgecdn.net/files/2619/943/UNU+Parts+Pack+%5bMTS%5d+1.10.2-11.0.0-1.1.3.jar
 
 RUN wget https://media.forgecdn.net/files/2620/86/MTS_Heavy_Industrial_by_AdamRK_1.8.0.jar
 
