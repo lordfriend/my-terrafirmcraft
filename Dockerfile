@@ -103,7 +103,7 @@ RUN wget https://media.forgecdn.net/files/2463/318/ModernLights-1.0.3_1.12.jar
 
 RUN wget https://media.forgecdn.net/files/2568/579/immersivetech-1.12-1.3.10.jar
 
-RUN wget https://media.forgecdn.net/files/2635/637/ImmersiveRailroading-1.4.0_1.12.jar
+RUN wget https://media.forgecdn.net/files/2637/7/ImmersiveRailroading-1.4.1_1.12.jar
 
 RUN wget https://media.forgecdn.net/files/2551/739/IGW-Mod-1.12.2-1.4.4-15-universal.jar
 
@@ -123,6 +123,10 @@ RUN wget https://media.forgecdn.net/files/2505/781/NoSpawnZone-1.12.2.1.3.jar
 
 RUN wget https://media.forgecdn.net/files/2568/8/VanillaSatchels-1.12.2-1.0.0.1-universal.jar
 
+RUN wget https://media.forgecdn.net/files/2526/670/malisiscore-1.12.2-6.4.0.jar
+RUN wget https://media.forgecdn.net/files/2526/679/malisisblocks-1.12.2-6.1.0.jar
+RUN wget https://media.forgecdn.net/files/2526/674/malisisdoors-1.12.2-7.3.0.jar
+
 RUN wget https://github.com/lordfriend/Techguns2/releases/download/2.0.1.3/techguns-1.12.2-2.0.1.3.jar
 
 # download resources pack
@@ -133,12 +137,17 @@ RUN wget -O Amtrak.zip https://media.forgecdn.net/files/2603/398/Amtrak%2B.zip
 RUN wget -O American_Freight_Pack.zip https://media.forgecdn.net/files/2623/708/American+Freight+Pack.zip
 RUN wget -O American_Diesel_Locomotive_Pack.zip https://media.forgecdn.net/files/2624/209/American+Diesel+Locomotive+Pack.zip
 RUN wget https://media.forgecdn.net/files/2624/834/AmericanPassengerPack_beta0.3.zip
-#RUN wget -O Japanese_Electric_Locomotive.zip https://media.forgecdn.net/files/2610/625/Japanese+Electric+Locomotive+Pack.zip
+RUN wget -O Japanese_Electric_Locomotive.zip https://media.forgecdn.net/files/2610/625/Japanese+Electric+Locomotive+Pack.zip
+RUN wget https://media.forgecdn.net/files/2637/533/ThemePark_1.4.zip
+RUN wget https://media.forgecdn.net/files/2629/353/friedrichlps-modern-stock-1.12.zip
 
 RUN cp Amtrak.zip\
     American_Freight_Pack.zip\
     American_Diesel_Locomotive_Pack.zip\
     AmericanPassengerPack_beta0.3.zip\
+    Japanese_Electric_Locomotive.zip\
+    ThemePark_1.4.zip\
+    friedrichlps-modern-stock-1.12.zip\
     /start/resourcepacks/
 
 # expose port
