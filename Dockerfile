@@ -109,7 +109,7 @@ RUN wget https://media.forgecdn.net/files/2551/739/IGW-Mod-1.12.2-1.4.4-15-unive
 
 RUN wget https://media.forgecdn.net/files/2535/626/TrackAPI-1.1_1.12.jar
 
-RUN wget https://media.forgecdn.net/files/2540/146/OpenComputers-MC1.12.2-1.7.2.67.jar
+RUN wget https://media.forgecdn.net/files/2638/675/OpenComputers-MC1.12.2-1.7.3.146.jar
 
 RUN wget https://media.forgecdn.net/files/2623/931/CraftTweaker2-1.12-4.1.10.jar
 
@@ -128,6 +128,8 @@ RUN wget https://media.forgecdn.net/files/2526/679/malisisblocks-1.12.2-6.1.0.ja
 RUN wget https://media.forgecdn.net/files/2526/674/malisisdoors-1.12.2-7.3.0.jar
 
 RUN wget https://github.com/lordfriend/Techguns2/releases/download/2.0.1.3/techguns-1.12.2-2.0.1.3.jar
+
+RUN wget https://media.forgecdn.net/files/2624/386/architecturecraft-1.12-3.80.jar
 
 # download resources pack
 WORKDIR /start/config/immersiverailroading
