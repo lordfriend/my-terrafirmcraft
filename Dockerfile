@@ -128,6 +128,7 @@ RUN wget https://media.forgecdn.net/files/2526/674/malisisdoors-1.12.2-7.3.0.jar
 RUN wget https://github.com/lordfriend/Techguns2/releases/download/2.0.1.3/techguns-1.12.2-2.0.1.3.jar
 
 RUN wget https://media.forgecdn.net/files/2624/386/architecturecraft-1.12-3.80.jar
+RUN wget https://media.forgecdn.net/files/2468/490/WinterWonderLand-1.2.2.jar
 
 # download resources pack
 WORKDIR /start/config/immersiverailroading
