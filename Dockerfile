@@ -59,9 +59,9 @@ RUN wget https://media.forgecdn.net/files/2584/26/CTM-MC1.12.2-0.3.2.18.jar
 
 RUN wget https://media.forgecdn.net/files/2567/260/RedstoneFlux-1.12-2.0.2.3-universal.jar
 
-RUN wget https://media.forgecdn.net/files/2621/95/Minecraft+Transport+Simulator-1.12.2-11.2.0.jar
+# RUN wget https://media.forgecdn.net/files/2621/95/Minecraft+Transport+Simulator-1.12.2-11.2.0.jar
 
-RUN wget https://media.forgecdn.net/files/2617/230/MTS_Official_Pack_V06.jar
+# RUN wget https://media.forgecdn.net/files/2617/230/MTS_Official_Pack_V06.jar
 
 RUN wget https://media.forgecdn.net/files/2544/919/immersivepetroleum-1.12.2-1.1.9.jar
 
@@ -71,9 +71,9 @@ RUN wget https://media.forgecdn.net/files/2625/772/FTBLib-5.3.0.56.jar
 
 RUN wget https://media.forgecdn.net/files/2460/570/worldedit-forge-mc1.12-6.1.8-dist.jar
 
-RUN wget https://media.forgecdn.net/files/2516/761/RecurrentComplex-1.4.7.jar
+# RUN wget https://media.forgecdn.net/files/2516/761/RecurrentComplex-1.4.7.jar
 
-RUN wget https://media.forgecdn.net/files/2443/253/IvToolkit-1.3.3-1.12.jar
+# RUN wget https://media.forgecdn.net/files/2443/253/IvToolkit-1.3.3-1.12.jar
 
 RUN wget https://media.forgecdn.net/files/2484/281/%5b1.12%5dMoVillages-1.5.4.jar
 
@@ -91,7 +91,7 @@ RUN wget https://media.forgecdn.net/files/2585/469/LightingWand-1.0.4.jar
 
 #RUN wget https://media.forgecdn.net/files/2619/943/UNU+Parts+Pack+%5bMTS%5d+1.10.2-11.0.0-1.1.3.jar
 
-RUN wget https://media.forgecdn.net/files/2620/86/MTS_Heavy_Industrial_by_AdamRK_1.8.0.jar
+# RUN wget https://media.forgecdn.net/files/2620/86/MTS_Heavy_Industrial_by_AdamRK_1.8.0.jar
 
 RUN wget https://media.forgecdn.net/files/2590/442/OnlinePicFrame_v1.4.19_mc1.12.2.jar
 
@@ -115,9 +115,7 @@ RUN wget https://media.forgecdn.net/files/2623/931/CraftTweaker2-1.12-4.1.10.jar
 
 RUN wget https://media.forgecdn.net/files/2488/533/Drones-0.3.0.jar
 
-RUN wget https://media.forgecdn.net/files/2625/312/ImmersiveEngineering-0.12-86.jar
-
-#RUN wget https://media.forgecdn.net/files/2608/992/CustomNPCs_1.12.2\(26aug18\).jar
+RUN wget https://media.forgecdn.net/files/2646/183/ImmersiveEngineering-0.12-87.jar
 
 RUN wget https://media.forgecdn.net/files/2505/781/NoSpawnZone-1.12.2.1.3.jar
 
@@ -141,7 +139,7 @@ RUN wget -O American_Diesel_Locomotive_Pack.zip https://media.forgecdn.net/files
 RUN wget https://media.forgecdn.net/files/2624/834/AmericanPassengerPack_beta0.3.zip
 RUN wget -O Japanese_Electric_Locomotive.zip https://media.forgecdn.net/files/2610/625/Japanese+Electric+Locomotive+Pack.zip
 RUN wget https://media.forgecdn.net/files/2637/533/ThemePark_1.4.zip
-RUN wget https://media.forgecdn.net/files/2629/353/friedrichlps-modern-stock-1.12.zip
+# RUN wget https://media.forgecdn.net/files/2629/353/friedrichlps-modern-stock-1.12.zip
 
 RUN cp Amtrak.zip\
     American_Freight_Pack.zip\
@@ -149,7 +147,6 @@ RUN cp Amtrak.zip\
     AmericanPassengerPack_beta0.3.zip\
     Japanese_Electric_Locomotive.zip\
     ThemePark_1.4.zip\
-    friedrichlps-modern-stock-1.12.zip\
     /start/resourcepacks/
 
 # expose port
