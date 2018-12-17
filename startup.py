@@ -30,7 +30,7 @@ class DaemonService(Service):
         self.args = [
             'java',
             '-Xms4G',
-            '-Xmx8G',
+            '-Xmx12G',
             '-XX:NewSize=2G',
             '-XX:MaxNewSize=4G',
             '-XX:SurvivorRatio=2',
