@@ -113,7 +113,7 @@ RUN wget https://media.forgecdn.net/files/2638/675/OpenComputers-MC1.12.2-1.7.3.
 
 RUN wget https://media.forgecdn.net/files/2623/931/CraftTweaker2-1.12-4.1.10.jar
 
-RUN wget https://media.forgecdn.net/files/2488/533/Drones-0.3.0.jar
+#RUN wget https://media.forgecdn.net/files/2488/533/Drones-0.3.0.jar
 
 RUN wget https://media.forgecdn.net/files/2646/183/ImmersiveEngineering-0.12-87.jar
 
@@ -128,7 +128,7 @@ RUN wget https://media.forgecdn.net/files/2526/674/malisisdoors-1.12.2-7.3.0.jar
 RUN wget https://github.com/lordfriend/Techguns2/releases/download/2.0.1.3/techguns-1.12.2-2.0.1.3.jar
 
 RUN wget https://media.forgecdn.net/files/2624/386/architecturecraft-1.12-3.80.jar
-RUN wget https://media.forgecdn.net/files/2468/490/WinterWonderLand-1.2.2.jar
+#RUN wget https://media.forgecdn.net/files/2468/490/WinterWonderLand-1.2.2.jar
 
 # download resources pack
 WORKDIR /start/config/immersiverailroading
