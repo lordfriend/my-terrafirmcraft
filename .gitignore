@@ -8,7 +8,7 @@ docker-compose.yml
 venv
 #config/forge.cfg
 #config/forgeChunkLoading.cfg
-mods
+#mods
 logs
 #libraries
 world
