@@ -130,6 +130,12 @@ RUN wget https://github.com/lordfriend/Techguns2/releases/download/2.0.1.3/techg
 RUN wget https://media.forgecdn.net/files/2624/386/architecturecraft-1.12-3.80.jar
 #RUN wget https://media.forgecdn.net/files/2468/490/WinterWonderLand-1.2.2.jar
 
+RUN wget https://coros.us/mods/modsystem/dl/coroutil-1.12.1-1.2.15.jar
+RUN wget https://coros.us/mods/modsystem/dl/weather2-1.12.1-2.6.12.jar
+RUN wget https://media.forgecdn.net/files/2625/165/obfuscate-0.2.6-1.12.2.jar
+RUN wget https://uc8fbd6ffd20454ddd754ae1ecb8.dl.dropboxusercontent.com/cd/0/get/AYx9iYZQ-LxHDcQaq9MWrWdUHT98_EKTeY6oK4yPbUgNh8794HSVadQsmKx_ScpEhAcu4gl5HbmY8XjlgevIUV82fxL-5GwIfpNW3bBiZpvy9CbO75CJL0jkFRwlfbxKX3QQsTcMIAi0kPI41vF8HWEFhennXTMLot8hfvGS0iXVQDg4_2Vkcr9pL58aW8MvOtk/file?dl=1
+RUN wget https://uc72146695beafa29b42e282722b.dl.dropboxusercontent.com/cd/0/get/AYwg7Fnr_fZA2ii0I6vGC8KeNbqj95h1or7uFoxrFUvfQTKoe6AoVibVWP32MuOmVzPjLbD8XJtQGRyzEvo9FIzNWENiZwKDu0TdpkQfQk3gaaCU04yed5ZgyHVZLRn-eoblS6_pKeO0Zw1VEYxPQynbnKFw-vCcOAiaKS7_GocK90h9B4w-rCg9P_0lLp2jWSE/file?dl=1
+
 # download resources pack
 WORKDIR /start/config/immersiverailroading
 
