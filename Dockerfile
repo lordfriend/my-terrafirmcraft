@@ -104,7 +104,7 @@ RUN wget https://media.forgecdn.net/files/2463/318/ModernLights-1.0.3_1.12.jar
 
 RUN wget https://media.forgecdn.net/files/2568/579/immersivetech-1.12-1.3.10.jar
 
-RUN wget https://media.forgecdn.net/files/2637/7/ImmersiveRailroading-1.4.1_1.12.jar
+RUN wget https://media.forgecdn.net/files/2657/72/ImmersiveRailroading-1.5.0_1.12-402.jar
 
 RUN wget https://media.forgecdn.net/files/2551/739/IGW-Mod-1.12.2-1.4.4-15-universal.jar
 

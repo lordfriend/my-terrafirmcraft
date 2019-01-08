@@ -49,3 +49,11 @@ recipes.removeByRecipeName("vanillasatchels:satchel_4");
 recipes.removeByRecipeName("vanillasatchels:satchel_3");
 recipes.removeByRecipeName("vanillasatchels:satchel_9");
 recipes.removeByRecipeName("vanillasatchels:satchel_8");
+
+// remove jetpack recipes
+recipes.removeByRecipeName("techguns:jetpack");
+recipes.removeByRecipeName("techguns:jetpack_alt");
+
+// remove garden_cloche
+
+recipes.removeByRecipeName("immersiveengineering:metal_devices/garden_cloche");

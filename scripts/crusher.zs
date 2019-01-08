@@ -1,1 +1,0 @@
-mods.immersiveengineering.Crusher.addRecipe(<minecraft:clay_ball> * 4, <minecraft:clay>, 512);
