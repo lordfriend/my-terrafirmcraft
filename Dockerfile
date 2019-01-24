@@ -126,7 +126,7 @@ RUN wget https://media.forgecdn.net/files/2526/670/malisiscore-1.12.2-6.4.0.jar
 RUN wget https://media.forgecdn.net/files/2526/679/malisisblocks-1.12.2-6.1.0.jar
 RUN wget https://media.forgecdn.net/files/2526/674/malisisdoors-1.12.2-7.3.0.jar
 
-RUN wget https://github.com/lordfriend/Techguns2/releases/download/2.0.1.3/techguns-1.12.2-2.0.1.3.jar
+# RUN wget https://github.com/lordfriend/Techguns2/releases/download/2.0.1.3/techguns-1.12.2-2.0.1.3.jar
 
 RUN wget https://media.forgecdn.net/files/2624/386/architecturecraft-1.12-3.80.jar
 #RUN wget https://media.forgecdn.net/files/2468/490/WinterWonderLand-1.2.2.jar
@@ -134,6 +134,10 @@ RUN wget https://media.forgecdn.net/files/2624/386/architecturecraft-1.12-3.80.j
 RUN wget https://coros.us/mods/modsystem/dl/coroutil-1.12.1-1.2.15.jar
 RUN wget https://coros.us/mods/modsystem/dl/weather2-1.12.1-2.6.12.jar
 RUN wget https://media.forgecdn.net/files/2625/165/obfuscate-0.2.6-1.12.2.jar
+
+RUN wget https://media.forgecdn.net/files/2650/475/SereneSeasons-1.12.2-1.2.15-universal.jar
+RUN wget https://media.forgecdn.net/files/2644/652/ToughAsNails-1.12.2-3.1.0.139-universal.jar
+RUN wget https://media.forgecdn.net/files/2644/656/FamiliarFauna-1.12.2-1.0.11.jar
 
 # download resources pack
 WORKDIR /start/config/immersiverailroading

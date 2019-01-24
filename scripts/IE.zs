@@ -19,5 +19,5 @@ mods.immersiveengineering.Crusher.addRecipe(<minecraft:clay_ball> * 4, <minecraf
 
 // Add bottle machine recipes
 
-mods.immersiveengineering.BottlingMachine.addRecipe(<vehicle:industrial_jerry_can>.withTag({fuel: 15000.0 as float}), <vehicle:industrial_jerry_can>, <liquid:gasoline> * 15000);
+mods.immersiveengineering.BottlingMachine.addRecipe(<vehicle:industrial_jerry_can>.withTag({fuel: 15000.0 as float}), <vehicle:industrial_jerry_can>, <liquid:gasoline> * 8000);
 mods.immersiveengineering.BottlingMachine.addRecipe(<vehicle:jerry_can>.withTag({fuel: 5000.0 as float}), <vehicle:jerry_can>, <liquid:gasoline> * 5000);
