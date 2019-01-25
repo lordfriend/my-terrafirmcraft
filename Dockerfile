@@ -118,7 +118,7 @@ RUN wget https://media.forgecdn.net/files/2623/931/CraftTweaker2-1.12-4.1.10.jar
 
 #RUN wget https://media.forgecdn.net/files/2488/533/Drones-0.3.0.jar
 
-RUN wget https://media.forgecdn.net/files/2646/183/ImmersiveEngineering-0.12-87.jar
+RUN wget https://media.forgecdn.net/files/2652/289/ImmersiveEngineering-0.12-88.jar
 
 RUN wget https://media.forgecdn.net/files/2505/781/NoSpawnZone-1.12.2.1.3.jar
 
