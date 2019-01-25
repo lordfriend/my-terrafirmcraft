@@ -1,0 +1,38 @@
+[
+  {
+    "names": [
+      "toughasnails:jelled_slime_helmet",
+      "toughasnails:jelled_slime_chestplate",
+      "toughasnails:jelled_slime_leggings",
+      "toughasnails:jelled_slime_boots"
+    ],
+    "modifier": -2
+  },
+  {
+    "names": [
+      "toughasnails:wool_helmet",
+      "toughasnails:wool_chestplate",
+      "toughasnails:wool_leggings",
+      "toughasnails:wool_boots"
+    ],
+    "modifier": 2
+  },
+  {
+    "names": [
+      "minecraft:diamond_helmet",
+      "minecraft:diamond_chestplate",
+      "minecraft:diamond_leggings",
+      "minecraft:diamond_boots"
+    ],
+    "modifier": 1
+  },
+  {
+    "names": [
+      "immersiveengineering:faraday_suit_head",
+      "immersiveengineering:faraday_suit_chest",
+      "immersiveengineering:faraday_suit_legs",
+      "immersiveengineering:faraday_suit_feet"
+    ],
+    "modifier": -1
+  }
+]
