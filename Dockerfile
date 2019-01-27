@@ -143,8 +143,8 @@ RUN wget https://media.forgecdn.net/files/2644/656/FamiliarFauna-1.12.2-1.0.11.j
 
 RUN wget https://media.forgecdn.net/files/2663/717/chiselsandbits-14.30.jar
 # mowziesmobs depends on llibrary, this is the latest version which support forge 2768
-#RUN wget https://media.forgecdn.net/files/2598/753/llibrary-1.7.15-1.12.2.jar
-#RUN wget https://media.forgecdn.net/files/2661/334/mowziesmobs-1.5.2.jar
+RUN wget https://media.forgecdn.net/files/2598/753/llibrary-1.7.15-1.12.2.jar
+RUN wget https://media.forgecdn.net/files/2661/334/mowziesmobs-1.5.2.jar
 RUN wget https://media.forgecdn.net/files/2643/742/GrimoireOfGaia3-1.12.2-1.6.8.jar
 
 # download resources pack
