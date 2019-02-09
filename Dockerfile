@@ -43,6 +43,7 @@ COPY libraries/* /start/libraries/
 COPY config/* /start/config/
 COPY config/Weather2/* /start/config/Weather2/
 COPY config/toughasnails/* /start/config/toughasnails/
+COPY config/betterquesting/* /start/config/betterquesting/
 COPY scripts/ /start/scripts/
 COPY mods/* /start/mods/
 
