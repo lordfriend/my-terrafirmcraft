@@ -148,8 +148,6 @@ RUN wget https://media.forgecdn.net/files/2598/753/llibrary-1.7.15-1.12.2.jar
 RUN wget https://media.forgecdn.net/files/2661/334/mowziesmobs-1.5.2.jar
 RUN wget https://media.forgecdn.net/files/2643/742/GrimoireOfGaia3-1.12.2-1.6.8.jar
 
-RUN wget https://media.forgecdn.net/files/2660/568/EBLib-6.0.2.5.jar
-RUN wget https://media.forgecdn.net/files/2660/575/LittleMaidReengaged-8.0.1.66-unofficial-1.12.2.jar
 RUN wget https://media.forgecdn.net/files/2539/562/questbook-3.1.1-1.12.jar
 RUN wget https://media.forgecdn.net/files/2669/773/StandardExpansion-3.4.151.jar
 RUN wget https://media.forgecdn.net/files/2669/769/BetterQuesting-3.5.291.jar
