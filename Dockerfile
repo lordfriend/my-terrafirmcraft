@@ -152,6 +152,8 @@ RUN wget https://media.forgecdn.net/files/2539/562/questbook-3.1.1-1.12.jar
 RUN wget https://media.forgecdn.net/files/2669/773/StandardExpansion-3.4.151.jar
 RUN wget https://media.forgecdn.net/files/2669/769/BetterQuesting-3.5.291.jar
 RUN wget https://media.forgecdn.net/files/2660/317/trafficcontrol-0.0.2.jar
+# jei need on server otherwise IR item cannot be cheated
+RUN wget https://media.forgecdn.net/files/2640/458/jei_1.12.2-4.13.1.225.jar
 
 # download resources pack
 WORKDIR /start/config/immersiverailroading
