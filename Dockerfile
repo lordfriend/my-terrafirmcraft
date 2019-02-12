@@ -160,7 +160,7 @@ WORKDIR /start/config/immersiverailroading
 RUN wget -O Amtrak.zip https://media.forgecdn.net/files/2603/398/Amtrak%2B.zip
 RUN wget -O American_Freight_Pack.zip https://media.forgecdn.net/files/2661/528/American+Freight+Pack.zip
 RUN wget -O American_Diesel_Locomotive_Pack.zip https://media.forgecdn.net/files/2624/209/American+Diesel+Locomotive+Pack.zip
-RUN wget https://media.forgecdn.net/files/2624/834/AmericanPassengerPack_beta0.3.zip
+RUN wget -O American_Passenger_Pack.zip https://media.forgecdn.net/files/2667/850/American+Passenger+Pack.zip
 RUN wget -O Japanese_Electric_Locomotive.zip https://media.forgecdn.net/files/2610/625/Japanese+Electric+Locomotive+Pack.zip
 RUN wget https://media.forgecdn.net/files/2637/533/ThemePark_1.4.zip
 # RUN wget https://media.forgecdn.net/files/2629/353/friedrichlps-modern-stock-1.12.zip

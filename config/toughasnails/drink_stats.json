@@ -7,5 +7,23 @@
     "thirst": 6,
     "hydration": 0.7,
     "poisonChance": 0.0
+  },
+  {
+    "item": {
+      "name": "minecraft:melon",
+      "metadata": 0
+    },
+    "thirst": 2,
+    "hydration": 0.4,
+    "poisonChance": 0.0
+  },
+  {
+    "item": {
+      "name": "minecraft:apple",
+      "metadata": 0
+    },
+    "thirst": 2,
+    "hydration": 0.6,
+    "poisonChance": 0.0
   }
 ]
