@@ -168,7 +168,7 @@ RUN wget https://media.forgecdn.net/files/2637/533/ThemePark_1.4.zip
 RUN cp Amtrak.zip\
     American_Freight_Pack.zip\
     American_Diesel_Locomotive_Pack.zip\
-    AmericanPassengerPack_beta0.3.zip\
+    American_Passenger_Pack.zip\
     Japanese_Electric_Locomotive.zip\
     ThemePark_1.4.zip\
     /start/resourcepacks/
