@@ -113,13 +113,13 @@ RUN wget https://media.forgecdn.net/files/2551/739/IGW-Mod-1.12.2-1.4.4-15-unive
 
 RUN wget https://media.forgecdn.net/files/2535/626/TrackAPI-1.1_1.12.jar
 
-RUN wget https://media.forgecdn.net/files/2638/675/OpenComputers-MC1.12.2-1.7.3.146.jar
+RUN wget https://media.forgecdn.net/files/2670/112/OpenComputers-MC1.12.2-1.7.4.153.jar
 
 RUN wget https://media.forgecdn.net/files/2623/931/CraftTweaker2-1.12-4.1.10.jar
 
 #RUN wget https://media.forgecdn.net/files/2488/533/Drones-0.3.0.jar
 
-RUN wget https://media.forgecdn.net/files/2652/289/ImmersiveEngineering-0.12-88.jar
+RUN wget https://media.forgecdn.net/files/2676/501/ImmersiveEngineering-0.12-89.jar
 
 RUN wget https://media.forgecdn.net/files/2505/781/NoSpawnZone-1.12.2.1.3.jar
 
@@ -145,7 +145,7 @@ RUN wget https://media.forgecdn.net/files/2644/656/FamiliarFauna-1.12.2-1.0.11.j
 RUN wget https://media.forgecdn.net/files/2663/717/chiselsandbits-14.30.jar
 # mowziesmobs depends on llibrary, this is the latest version which support forge 2768
 RUN wget https://media.forgecdn.net/files/2598/753/llibrary-1.7.15-1.12.2.jar
-RUN wget https://media.forgecdn.net/files/2661/334/mowziesmobs-1.5.2.jar
+RUN wget https://media.forgecdn.net/files/2674/555/mowziesmobs-1.5.3.jar
 RUN wget https://media.forgecdn.net/files/2643/742/GrimoireOfGaia3-1.12.2-1.6.8.jar
 
 RUN wget https://media.forgecdn.net/files/2539/562/questbook-3.1.1-1.12.jar
@@ -154,6 +154,16 @@ RUN wget https://media.forgecdn.net/files/2669/769/BetterQuesting-3.5.291.jar
 RUN wget https://media.forgecdn.net/files/2660/317/trafficcontrol-0.0.2.jar
 # jei need on server otherwise IR item cannot be cheated
 RUN wget https://media.forgecdn.net/files/2640/458/jei_1.12.2-4.13.1.225.jar
+
+# add new slots for accesories
+RUN wget https://media.forgecdn.net/files/2518/667/Baubles-1.12-1.5.2.jar
+# control death penalty
+RUN wget https://media.forgecdn.net/files/2672/212/corpsecomplex-1.12.2-1.0.4.1.jar
+# generate a grave stone when player death.
+RUN wget https://media.forgecdn.net/files/2634/989/GraveStone-1.12.2-Graves-1.3.1.jar
+# add trinkets and baubles for Baubles mod
+RUN wget https://media.forgecdn.net/files/2666/572/Trinkets-and-Baubles-1.12.2-0.22.jar
+
 
 # download resources pack
 WORKDIR /start/config/immersiverailroading

@@ -5,7 +5,7 @@ import mods.immersiveengineering.MineralMix;
 import mods.immersiveengineering.Crusher;
 import mods.immersiveengineering.BottlingMachine;
 
-mods.immersiveengineering.Excavator.addMineral("Redstone Ore", 100, 0, ["oreRedstone", "obsidian"], [0.8, 0.2]);
+// mods.immersiveengineering.Excavator.addMineral("Redstone Ore", 100, 0, ["oreRedstone", "obsidian"], [0.8, 0.2]);
 
 // var Redstone = Excavator.getMineral("Redstone Ore");
 
@@ -15,7 +15,7 @@ mods.immersiveengineering.Excavator.addMineral("Redstone Ore", 100, 0, ["oreReds
 // print(Redstone.failChance);
 
 // crusher
-mods.immersiveengineering.Crusher.addRecipe(<minecraft:clay_ball> * 4, <minecraft:clay>, 512);
+// mods.immersiveengineering.Crusher.addRecipe(<minecraft:clay_ball> * 4, <minecraft:clay>, 512);
 
 // Add bottle machine recipes
 
