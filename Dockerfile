@@ -148,7 +148,7 @@ RUN wget https://media.forgecdn.net/files/2640/458/jei_1.12.2-4.13.1.225.jar
 # add new slots for accesories
 RUN wget https://media.forgecdn.net/files/2518/667/Baubles-1.12-1.5.2.jar
 # control death penalty
-RUN wget https://media.forgecdn.net/files/2672/212/corpsecomplex-1.12.2-1.0.4.1.jar
+#RUN wget https://media.forgecdn.net/files/2672/212/corpsecomplex-1.12.2-1.0.4.1.jar
 # generate a grave stone when player death.
 RUN wget https://media.forgecdn.net/files/2634/989/GraveStone-1.12.2-Graves-1.3.1.jar
 # add trinkets and baubles for Baubles mod
