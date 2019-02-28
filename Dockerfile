@@ -20,32 +20,12 @@ RUN mkdir /start
 #RUN rm forge-1.12.2-14.23.4.2760-installer.jar \
 #    && rm forge-1.12.2-14.23.4.2760-installer.jar.log
 
-# copy repo files to root folder
-WORKDIR /start
-
 RUN mkdir /start/oc_message_broker
-
-COPY server.properties\
-     eula.txt\
-     startup.py\
-     __init__.py\
-     forge-1.12.2-14.23.5.2768-universal.jar\
-     minecraft_server.1.12.2.jar\
-     ./
-COPY oc_message_broker/* /start/oc_message_broker/
 
 RUN mkdir /start/libraries
 RUN mkdir /start/config
 RUN mkdir /start/scripts
 RUN mkdir /start/mods
-
-COPY libraries/* /start/libraries/
-COPY config/* /start/config/
-COPY config/Weather2/* /start/config/Weather2/
-COPY config/toughasnails/* /start/config/toughasnails/
-COPY config/betterquesting/* /start/config/betterquesting/
-COPY scripts/ /start/scripts/
-COPY mods/* /start/mods/
 
 # install immersiverailroading stock resource pack
 RUN mkdir /start/config/immersiverailroading
@@ -172,6 +152,9 @@ RUN wget -O Japanese_Electric_Locomotive.zip https://media.forgecdn.net/files/26
 RUN wget https://media.forgecdn.net/files/2637/533/ThemePark_1.4.zip
 # RUN wget https://media.forgecdn.net/files/2629/353/friedrichlps-modern-stock-1.12.zip
 
+# copy repo files to root folder
+WORKDIR /start
+
 RUN cp Amtrak.zip\
     American_Freight_Pack.zip\
     American_Diesel_Locomotive_Pack.zip\
@@ -180,6 +163,20 @@ RUN cp Amtrak.zip\
     Japanese_Electric_Locomotive.zip\
     ThemePark_1.4.zip\
     /start/resourcepacks/
+
+COPY server.properties\
+     eula.txt\
+     startup.py\
+     __init__.py\
+     forge-1.12.2-14.23.5.2768-universal.jar\
+     minecraft_server.1.12.2.jar\
+     ./
+COPY oc_message_broker/ /start/oc_message_broker/
+
+COPY libraries/ /start/libraries/
+COPY config/ /start/config/
+COPY scripts/ /start/scripts/
+COPY mods/ /start/mods/
 
 # expose port
 EXPOSE 25565/udp
