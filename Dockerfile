@@ -152,9 +152,6 @@ RUN wget -O Japanese_Electric_Locomotive.zip https://media.forgecdn.net/files/26
 RUN wget https://media.forgecdn.net/files/2637/533/ThemePark_1.4.zip
 # RUN wget https://media.forgecdn.net/files/2629/353/friedrichlps-modern-stock-1.12.zip
 
-# copy repo files to root folder
-WORKDIR /start
-
 RUN cp Amtrak.zip\
     American_Freight_Pack.zip\
     American_Diesel_Locomotive_Pack.zip\
@@ -163,6 +160,9 @@ RUN cp Amtrak.zip\
     Japanese_Electric_Locomotive.zip\
     ThemePark_1.4.zip\
     /start/resourcepacks/
+
+# copy repo files to root folder
+WORKDIR /start
 
 COPY server.properties\
      eula.txt\
