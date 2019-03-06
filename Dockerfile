@@ -189,9 +189,9 @@ RUN useradd minecraft -p tfc -d /home/minecraft
 
 RUN chown minecraft:minecraft /home/minecraft
 
-RUN chown minecraft:minecraft /start/* -R
+RUN chown minecraft:minecraft /start/ -R
 
-RUN chmod a+r /start -R
+RUN chmod a+rw /start -R
 
 WORKDIR /home/minecraft
 
