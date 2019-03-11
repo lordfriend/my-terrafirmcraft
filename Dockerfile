@@ -75,7 +75,7 @@ RUN wget https://media.forgecdn.net/files/2618/630/CodeChickenLib-1.12.2-3.2.2.3
 
 RUN wget https://media.forgecdn.net/files/2463/318/ModernLights-1.0.3_1.12.jar
 
-RUN wget https://media.forgecdn.net/files/2568/579/immersivetech-1.12-1.3.10.jar
+#RUN wget https://media.forgecdn.net/files/2568/579/immersivetech-1.12-1.3.10.jar
 
 RUN wget https://media.forgecdn.net/files/2657/72/ImmersiveRailroading-1.5.0_1.12-402.jar
 
@@ -116,7 +116,7 @@ RUN wget https://media.forgecdn.net/files/2663/717/chiselsandbits-14.30.jar
 # mowziesmobs depends on llibrary, this is the latest version which support forge 2768
 RUN wget https://media.forgecdn.net/files/2598/753/llibrary-1.7.15-1.12.2.jar
 RUN wget https://media.forgecdn.net/files/2674/555/mowziesmobs-1.5.3.jar
-RUN wget https://media.forgecdn.net/files/2643/742/GrimoireOfGaia3-1.12.2-1.6.8.jar
+RUN wget https://media.forgecdn.net/files/2685/691/GrimoireOfGaia3-1.12.2-1.6.9.2.jar
 
 RUN wget https://media.forgecdn.net/files/2539/562/questbook-3.1.1-1.12.jar
 RUN wget https://media.forgecdn.net/files/2669/773/StandardExpansion-3.4.151.jar
