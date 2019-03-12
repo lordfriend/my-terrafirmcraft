@@ -130,7 +130,7 @@ RUN wget https://media.forgecdn.net/files/2518/667/Baubles-1.12-1.5.2.jar
 # control death penalty
 #RUN wget https://media.forgecdn.net/files/2672/212/corpsecomplex-1.12.2-1.0.4.1.jar
 # generate a grave stone when player death.
-RUN wget https://media.forgecdn.net/files/2634/989/GraveStone-1.12.2-Graves-1.3.1.jar
+#RUN wget https://media.forgecdn.net/files/2634/989/GraveStone-1.12.2-Graves-1.3.1.jar
 # add trinkets and baubles for Baubles mod
 RUN wget https://media.forgecdn.net/files/2666/572/Trinkets-and-Baubles-1.12.2-0.22.jar
 # railstuff
