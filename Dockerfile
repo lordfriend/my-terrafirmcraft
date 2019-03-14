@@ -116,7 +116,7 @@ RUN wget https://media.forgecdn.net/files/2663/717/chiselsandbits-14.30.jar
 # mowziesmobs depends on llibrary, this is the latest version which support forge 2768
 RUN wget https://media.forgecdn.net/files/2598/753/llibrary-1.7.15-1.12.2.jar
 RUN wget https://media.forgecdn.net/files/2674/555/mowziesmobs-1.5.3.jar
-RUN wget https://media.forgecdn.net/files/2685/691/GrimoireOfGaia3-1.12.2-1.6.9.2.jar
+RUN wget https://media.forgecdn.net/files/2686/203/GrimoireOfGaia3-1.12.2-1.6.9.3.jar
 
 RUN wget https://media.forgecdn.net/files/2539/562/questbook-3.1.1-1.12.jar
 RUN wget https://media.forgecdn.net/files/2669/773/StandardExpansion-3.4.151.jar
