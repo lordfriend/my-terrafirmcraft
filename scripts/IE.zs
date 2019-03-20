@@ -34,7 +34,7 @@ mods.immersiveengineering.Blueprint.removeRecipe(<immersiveengineering:bullet:2>
 // add new recipe for DragonBreath Bullet
 
 mods.immersiveengineering.Blueprint.addRecipe("specialBullet", <immersiveengineering:bullet:2>.withTag({bullet: "dragonsbreath"}), [
-    <immersiveengineering:bullet:1>, <grimoireofgaia:misc_soul_fire>*64, <grimoireofgaia:misc_soul_fiery>*32, <ore:dustAluminum>*64
+    <immersiveengineering:bullet:1>, <grimoireofgaia:misc_soul_fire>*40, <grimoireofgaia:misc_soul_fiery>*16, <ore:dustAluminum>*32
 ]);
 
 // add common bullets recipes
@@ -44,33 +44,33 @@ mods.immersiveengineering.Blueprint.addRecipe("bullet", <immersiveengineering:bu
 ]);
 // AP
 mods.immersiveengineering.Blueprint.addRecipe("bullet", <immersiveengineering:bullet:2>.withTag({bullet: "armor_piercing"}) , [
-    <immersiveengineering:bullet>, <ore:gunpowder>, <ore:nuggetLead>, <ore:nuggetLead>
+    <immersiveengineering:bullet>, <ore:gunpowder>, <ore:nuggetSteel>*2, <ore:nuggetConstantan>*2
 ]);
 
 mods.immersiveengineering.Blueprint.addRecipe("bullet", <immersiveengineering:bullet:2>.withTag({bullet: "buckshot"}), [
-    <immersiveengineering:bullet>, <ore:gunpowder>, <ore:nuggetLead>, <ore:nuggetLead>
+    <immersiveengineering:bullet:1>, <ore:gunpowder>, <ore:dustIron>
 ]);
 
 mods.immersiveengineering.Blueprint.addRecipe("bullet", <immersiveengineering:bullet:2>.withTag({bullet: "he"}), [
-    <immersiveengineering:bullet>, <ore:gunpowder>, <ore:nuggetLead>, <ore:nuggetLead>
+    <immersiveengineering:bullet>, <ore:gunpowder>, <minecraft:tnt>
 ]);
 
 mods.immersiveengineering.Blueprint.addRecipe("bullet", <immersiveengineering:bullet:2>.withTag({bullet: "silver"}), [
-    <immersiveengineering:bullet>, <ore:gunpowder>, <ore:nuggetLead>, <ore:nuggetLead>
+    <immersiveengineering:bullet>, <ore:gunpowder>, <ore:nuggetLead>*2, <ore:nuggetSilver>
 ]);
 
 mods.immersiveengineering.Blueprint.addRecipe("specialBullet", <immersiveengineering:bullet:2>.withTag({bullet: "potion"}), [
-    <immersiveengineering:bullet>, <ore:gunpowder>, <ore:nuggetLead>, <ore:nuggetLead>
+    <immersiveengineering:bullet>, <ore:gunpowder>, <minecraft:glass_bottle>
 ]);
 
 mods.immersiveengineering.Blueprint.addRecipe("specialBullet", <immersiveengineering:bullet:2>.withTag({bullet: "flare"}), [
-    <immersiveengineering:bullet>, <ore:gunpowder>, <ore:nuggetLead>, <ore:nuggetLead>
+    <immersiveengineering:bullet:1>, <ore:gunpowder>, <ore:dustAluminum>, <ore:dyeRed>
 ]);
 
 mods.immersiveengineering.Blueprint.addRecipe("specialBullet", <immersiveengineering:bullet:2>.withTag({flareColour: 16777090, bullet: "flare"}), [
-    <immersiveengineering:bullet>, <ore:gunpowder>, <ore:nuggetLead>, <ore:nuggetLead>
+    <immersiveengineering:bullet:1>, <ore:gunpowder>, <ore:dustAluminum>, <ore:dyeYellow>
 ]);
 
 mods.immersiveengineering.Blueprint.addRecipe("specialBullet", <immersiveengineering:bullet:2>.withTag({flareColour: 2925323, bullet: "flare"}), [
-    <immersiveengineering:bullet>, <ore:gunpowder>, <ore:nuggetLead>, <ore:nuggetLead>
+    <immersiveengineering:bullet:1>, <ore:gunpowder>, <ore:dustAluminum>, <ore:dyeGreen>
 ]);
