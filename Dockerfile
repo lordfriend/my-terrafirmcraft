@@ -109,7 +109,7 @@ RUN wget https://coros.us/mods/modsystem/dl/weather2-1.12.1-2.6.12.jar
 RUN wget https://media.forgecdn.net/files/2625/165/obfuscate-0.2.6-1.12.2.jar
 
 RUN wget https://media.forgecdn.net/files/2650/475/SereneSeasons-1.12.2-1.2.15-universal.jar
-RUN wget https://media.forgecdn.net/files/2644/652/ToughAsNails-1.12.2-3.1.0.139-universal.jar
+# RUN wget https://media.forgecdn.net/files/2644/652/ToughAsNails-1.12.2-3.1.0.139-universal.jar
 RUN wget https://media.forgecdn.net/files/2644/656/FamiliarFauna-1.12.2-1.0.11.jar
 
 RUN wget https://media.forgecdn.net/files/2663/717/chiselsandbits-14.30.jar
