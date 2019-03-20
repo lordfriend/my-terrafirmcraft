@@ -135,8 +135,8 @@ RUN wget https://media.forgecdn.net/files/2518/667/Baubles-1.12-1.5.2.jar
 RUN wget https://media.forgecdn.net/files/2666/572/Trinkets-and-Baubles-1.12.2-0.22.jar
 # railstuff
 RUN wget https://media.forgecdn.net/files/2668/333/railstuff-0.0.1.jar
-# this is a sever side mod
 RUN wget https://media.forgecdn.net/files/2620/81/%5b1.12.x%5d%5bver.3.0.0%5dSpawnController.jar.jar
+RUN wget https://media.forgecdn.net/files/2618/264/twilightforest-1.12.2-3.8.689-universal.jar
 
 # download resources pack
 WORKDIR /start/config/immersiverailroading
