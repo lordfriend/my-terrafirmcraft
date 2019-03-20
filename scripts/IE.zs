@@ -34,7 +34,7 @@ mods.immersiveengineering.Blueprint.removeRecipe(<immersiveengineering:bullet:2>
 // add new recipe for DragonBreath Bullet
 
 mods.immersiveengineering.Blueprint.addRecipe("specialBullet", <immersiveengineering:bullet:2>.withTag({bullet: "dragonsbreath"}), [
-    <immersiveengineering:bullet:1>, <grimoireofgaia:misc_soul_fire>*40, <grimoireofgaia:misc_soul_fiery>*16, <ore:dustAluminum>*32
+    <immersiveengineering:bullet:1>, <grimoireofgaia:misc_soul_fire>*32, <grimoireofgaia:misc_soul_fiery>*16, <ore:dustAluminum>*40
 ]);
 
 // add common bullets recipes
