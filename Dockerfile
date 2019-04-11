@@ -138,6 +138,8 @@ RUN wget https://media.forgecdn.net/files/2668/333/railstuff-0.0.1.jar
 RUN wget https://media.forgecdn.net/files/2620/81/%5b1.12.x%5d%5bver.3.0.0%5dSpawnController.jar.jar
 RUN wget https://media.forgecdn.net/files/2618/264/twilightforest-1.12.2-3.8.689-universal.jar
 
+RUN wget https://media.forgecdn.net/files/2697/672/CosmeticArmorReworked-1.12.2-v4a.jar
+
 # download resources pack
 WORKDIR /start/config/immersiverailroading
 
