@@ -30,15 +30,17 @@ COPY Decorations-1.0.20.jar journeymap-1.7.10-5.1.4p1-unlimited.jar mods/
 
 WORKDIR /start/mods
 
-RUN wget https://bitly.com/Build79-29 && mv Build79-29 [1.7.10]TerraFirmaCraft-0.79.29.922.jar
+RUN wget https://media.forgecdn.net/files/2627/990/1.7.10-TerraFirmaCraft-0.79.30.925.jar
 
 RUN wget http://files.forgeessentials.com/forgeessentials-1.7.10-server.jar
 
 RUN wget http://files.player.to/fastcraft-1.23.jar
 
-RUN wget https://dl.dropboxusercontent.com/u/87519140/TFC/tfc_0.79.28/%5B1.7.10%5DTFCUdaryMod-0.2.31.jar
+COPY mods/ /start/mods/
 
 EXPOSE 25565/udp
+EXPOSE 25565/tcp
+EXPOSE 25568/tcp
 
 RUN mkdir /home/minecraft
 # change password after build
