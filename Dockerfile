@@ -13,12 +13,12 @@ RUN mkdir /start
 
 WORKDIR /start
 
-RUN wget http://files.minecraftforge.net/maven/net/minecraftforge/forge/1.7.10-10.13.4.1558-1.7.10/forge-1.7.10-10.13.4.1558-1.7.10-installer.jar
+#RUN wget http://files.minecraftforge.net/maven/net/minecraftforge/forge/1.7.10-10.13.4.1558-1.7.10/forge-1.7.10-10.13.4.1558-1.7.10-installer.jar
 
-RUN java -jar forge-1.7.10-10.13.4.1558-1.7.10-installer.jar --installServer
+#RUN java -jar forge-1.7.10-10.13.4.1558-1.7.10-installer.jar --installServer
 
-RUN rm forge-1.7.10-10.13.4.1558-1.7.10-installer.jar \
-    && rm forge-1.7.10-10.13.4.1558-1.7.10-installer.jar.log
+#RUN rm forge-1.7.10-10.13.4.1558-1.7.10-installer.jar \
+#    && rm forge-1.7.10-10.13.4.1558-1.7.10-installer.jar.log
 
 COPY server.properties eula.txt startup.py __init__.py ./
 
