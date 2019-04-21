@@ -6,8 +6,10 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get install -y \
   sudo \
   vim \
   wget \
-  python-twisted \
+  python3-pip \
   && apt-get clean
+
+RUN sudo pip3 install Twisted
 
 RUN mkdir /start
 
