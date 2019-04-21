@@ -12,6 +12,7 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get install -y \
 RUN sudo pip3 install Twisted
 
 RUN mkdir /start
+RUN mkdir /start/oc_message_broker
 
 WORKDIR /start
 
@@ -27,6 +28,7 @@ COPY server.properties eula.txt startup.py __init__.py ./
 RUN mkdir mods
 
 COPY Decorations-1.0.20.jar journeymap-1.7.10-5.1.4p1-unlimited.jar mods/
+COPY oc_message_broker/ /start/oc_message_broker/
 
 WORKDIR /start/mods
 
