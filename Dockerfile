@@ -36,7 +36,7 @@ RUN wget https://media.forgecdn.net/files/2627/990/1.7.10-TerraFirmaCraft-0.79.3
 
 RUN wget http://files.forgeessentials.com/forgeessentials-1.7.10-server.jar
 
-RUN wget http://files.player.to/fastcraft-1.23.jar
+# RUN wget http://files.player.to/fastcraft-1.23.jar
 
 COPY mods/ /start/mods/
 
