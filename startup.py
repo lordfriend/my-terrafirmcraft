@@ -38,6 +38,7 @@ class DaemonService(Service):
             '-d64',
             '-XX:+UseConcMarkSweepGC',
             '-XX:+AggressiveOpts',
+            '-Djava.net.preferIPv4Stack=true',
             '-jar',
             'forge-1.7.10-10.13.4.1558-1.7.10-universal.jar',
             'nogui',
